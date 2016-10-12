@@ -34,6 +34,9 @@ import java.util.ArrayList;
             total = number1 * 1.1;
         } else if (function == 3) {
             total = number1 * 1.05;
+        }else {
+            System.out.println("Please choose 1 though 3");
+            tip();
         }
         double totalBill = Math.round(total * 100.0) / 100.0;
 

@@ -1,1 +1,1 @@
-Total Bill with tip is: 600.0
+Total Bill with tip is: 525.0

@@ -43,6 +43,7 @@ public class Calculator {
                     total = number2 + number1;
                 } else {
                     System.out.println(" Please input a function");
+                    cal();
                 }
 
                 System.out.println(total);
@@ -56,7 +57,7 @@ public class Calculator {
                 Scanner sc = new Scanner(System.in);
                 System.out.println("Do another calculation? y/n");
                 String more = sc.nextLine();
-                if (more.equals("n")){
+                if (more.toLowerCase().substring(0, 1).equals("n")) {
                     Menu.menu();
                 }
 

@@ -27,7 +27,7 @@ public class Grocery {
 
             double total=0;
             double sum=0;
-            if (moreG.equals("n")) {
+            if (moreG.toLowerCase().substring(0, 1).equals("n")) {
                 System.out.println("The total of your groceries are:");
                 for (int i = 0; i < gradeBook.size(); i++) {
                     sum = sum + gradeBook.get(i);

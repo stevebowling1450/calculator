@@ -26,6 +26,9 @@ public class Menu {
         } else if (choose==6){
             System.out.println("Thank you for using My Calculator App.");
 
+        }else {
+            System.out.println("Please enter a number from 1 to 6 \n ");
+            menu();
         }
         }
 }
