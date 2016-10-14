@@ -12,7 +12,6 @@ import java.util.ArrayList;
     public class Tip {
     public static void tip() throws IOException{
 
-
         Scanner num1 = new Scanner(System.in);
         Scanner func = new Scanner(System.in);
 
@@ -22,7 +21,6 @@ import java.util.ArrayList;
 
         System.out.println("Bill Total:");
         number1 = num1.nextDouble();
-
 
         System.out.println("Rate your Service" + "\n" + "1 for Great = 20%" + "\n" + "2 for Good = 10%" + "\n"
                 + "3 6for bad = 5%");
@@ -45,8 +43,6 @@ import java.util.ArrayList;
         }
         double totalBill = Math.round(total * 100.0) / 100.0;
 
-
-
         PrintWriter outFile = new PrintWriter(new FileWriter("tip.txt"));
         outFile.println("Total Bill with tip is: "+totalBill);
         outFile.close();
@@ -54,6 +50,5 @@ import java.util.ArrayList;
         System.out.println("Your total bill with tip is: "+ totalBill+"\n");
 
         Menu.menu();
-
     }
 }

@@ -6,8 +6,6 @@ import java.io.IOException;
  * Created by stevebowling on 10/10/16.
  */
 public class Help {
-
-
     public static void help() throws IOException{
         int h1;
         Scanner sc = new Scanner(System.in);
