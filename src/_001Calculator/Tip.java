@@ -28,15 +28,20 @@ import java.util.ArrayList;
                 + "3 6for bad = 5%");
         function = func.nextInt();
 
-        if (function == 1) {
-            total = number1 * 1.2;
-        } else if (function == 2) {
-            total = number1 * 1.1;
-        } else if (function == 3) {
-            total = number1 * 1.05;
-        }else {
-            System.out.println("Please choose 1 though 3");
-            tip();
+        switch (function) {
+            case 1:
+                total = number1 * 1.2;
+                break;
+            case 2:
+                total = number1 * 1.1;
+                break;
+            case 3:
+                total = number1 * 1.05;
+                break;
+            default:
+                System.out.println("Please choose 1 though 3");
+                tip();
+                break;
         }
         double totalBill = Math.round(total * 100.0) / 100.0;
 

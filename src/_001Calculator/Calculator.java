@@ -32,18 +32,23 @@ public class Calculator {
                 number2 = num2.nextInt();
 
 
-
-                if (function.equals("*")) {
-                    total = number1 * number2;
-                } else if (function.equals("/")) {
-                    total = number2 / number1;
-                } else if (function.equals("-")) {
-                    total = number2 - number1;
-                } else if (function.equals("+")) {
-                    total = number2 + number1;
-                } else {
-                    System.out.println(" Please input a function");
-                    cal();
+                switch (function) {
+                    case "*":
+                        total = number1 * number2;
+                        break;
+                    case "/":
+                        total = number2 / number1;
+                        break;
+                    case "-":
+                        total = number2 - number1;
+                        break;
+                    case "+":
+                        total = number2 + number1;
+                        break;
+                    default:
+                        System.out.println(" Please input a function");
+                        cal();
+                        break;
                 }
 
                 System.out.println(total);
